@@ -5,24 +5,28 @@
 - [x] Read `Project/application.csv` header to confirm available columns
 
 ## Step 2: Implement dashboard
-- [ ] Create `Project/admissions_dashboard.py`
-  - [ ] CLI args: `--csv` and `--outdir`
-  - [ ] Robust CSV loading + error handling
-  - [ ] Cleaning: missing data handling + duplicates
-  - [ ] Compute acceptance rate + outcome distribution
-  - [ ] Compute GPA/SAT/Extracurricular histograms
-  - [ ] Export `summary.csv` and `summary.html`
-  - [ ] Rule-based narrative insight generator
-  - [ ] Skip gender/program sections when columns are not present (dataset has only GPA/SAT/Extracurricular/Admission_Status)
+- [x] Create `Project/admissions_dashboard.py`
+  - [x] CLI args: `--csv` and `--outdir`
+  - [x] Robust CSV loading + error handling
+  - [x] Cleaning: missing data handling + duplicates
+  - [x] Compute acceptance rate + outcome distribution
+  - [x] Compute GPA/SAT/Extracurricular histograms
+  - [x] Export `summary.csv` and `summary.html`
+  - [x] Rule-based narrative insight generator
+  - [x] Skip gender/program sections when columns are not present (dataset has only GPA/SAT/Extracurricular/Admission_Status)
+
 
 ## Step 3: GitHub-ready project files
-- [ ] Create `README.md` with run instructions + description of outputs
-- [ ] Create `requirements.txt`
-- [ ] Create `.gitignore`
+- [x] Create `README.md` with run instructions + description of outputs
+- [x] Create `requirements.txt`
+- [x] Create `.gitignore`
+
 
 ## Step 4: Runtime validation
-- [ ] Run the script and ensure outputs are created under `Project/outputs`
+- [x] Run the script and ensure outputs are created under `Project/outputs`
+
 
 ## Step 5: GitHub push (user-side)
 - [ ] Initialize git, commit, and push (commands provided after validation)
+
 
