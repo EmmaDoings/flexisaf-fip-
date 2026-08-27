@@ -4,4 +4,8 @@ seaborn
 jinja2
 numpy
 scikit-learn
+torch
+torchvision
+Pillow
+streamlit
 

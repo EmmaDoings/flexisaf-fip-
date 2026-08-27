@@ -37,3 +37,27 @@ pip install -r requirements.txt
 ## Notes on the “AI-powered” insight
 This implementation uses a **rule-based narrative template** (no external API).
 
+## Image deblurring app
+
+The app in `tasks/Image deblurring app/model.py` trains a compact residual
+MobileNetV3 model on paired GoPro images and provides a Streamlit interface for
+testing images from a physical camera. Arrange the downloaded dataset as:
+
+```text
+gopro/
+	blur/
+	sharp/
+```
+
+Install the additional dependencies, train, and launch the app from the repo root:
+
+```bash
+pip install -r requirements.txt
+python "tasks/Image deblurring app/model.py" train --root gopro --epochs 10 --output deblurrer.pt
+streamlit run "tasks/Image deblurring app/model.py"
+```
+
+The model uses paired L1 training and the reusable `psnr()` function supports
+evaluation on a held-out GoPro split. The MobileNetV3 backbone keeps inference
+lightweight enough for physical-camera testing.
+
