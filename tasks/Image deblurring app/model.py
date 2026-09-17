@@ -16,7 +16,7 @@ import numpy as np
 from PIL import Image
 import streamlit as st
 import torch
-from torch import Tensor, nn
+from torch import Tensor
 from torch.utils.data import DataLoader, Dataset
 from torchvision.models import MobileNet_V3_Small_Weights, mobilenet_v3_small
 from torchvision.transforms import functional as TF

@@ -37,6 +37,24 @@ pip install -r requirements.txt
 ## Notes on the “AI-powered” insight
 This implementation uses a **rule-based narrative template** (no external API).
 
+## Intelligent Class Summarizer
+
+`Project/class_summarizer.py` processes `.txt` or `.csv` class transcripts, extracts topic clusters, creates topic-wise summaries, detects next steps/assignments, and exports structured reports.
+
+Run the included sample:
+
+```bash
+python Project/class_summarizer.py --input Project/sample_transcript.txt --outdir Project/outputs/class_summary --topics 3
+```
+
+Outputs:
+- `Project/outputs/class_summary/class_summary.html`
+- `Project/outputs/class_summary/class_summary.csv`
+
+For CSV files, include a text-like column such as `message`, `text`, `transcript`, `chat`, `content`, or `utterance`.
+
+The implementation uses local topic modeling with scikit-learn LDA and TF-IDF extractive summarization, so it works offline without an API key.
+
 ## Image deblurring app
 
 The app in `tasks/Image deblurring app/model.py` trains a compact residual
@@ -60,4 +78,21 @@ streamlit run "tasks/Image deblurring app/model.py"
 The model uses paired L1 training and the reusable `psnr()` function supports
 evaluation on a held-out GoPro split. The MobileNetV3 backbone keeps inference
 lightweight enough for physical-camera testing.
+
+## Creative generative AI model
+
+`tasks/creative_generative_model.py` is a local word-level Markov model that
+practises generative AI uses in creative industries. It can generate draft
+advertising concepts, film premises, fashion moodboards, and music lyric ideas.
+
+Run examples from the repo root:
+
+```bash
+python tasks/creative_generative_model.py --use-case advertising --count 5
+python tasks/creative_generative_model.py --use-case film --count 3 --seed 12
+python tasks/creative_generative_model.py --use-case fashion --order 1
+python tasks/creative_generative_model.py --use-case music --count 4
+```
+
+The script uses only the Python standard library and does not require an API key.
 
