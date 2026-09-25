@@ -1,0 +1,12 @@
+timestamp,user,message
+[10:01],Teacher,"Welcome everyone! Today we are covering quadratic equations and factoring."
+[10:02],Student A,"Hi Mr. Smith. Will this be on the test?"
+[10:02],Teacher,"Yes, this topic is critical for the midterm."
+[10:05],Teacher,"Let's look at the formula. Can anyone type the standard form?"
+[10:06],Student B,"ax^2 + bx + c = 0"
+[10:06],Teacher,"Perfect. For your assignment today, please practice the 10 factoring problems on page 42."
+[10:10],Student C,"When is the deadline to submit the homework?"
+[10:11],Teacher,"Please submit your assignment by Friday at 5 PM through the portal."
+[10:15],Teacher,"Next step: we will learn how to graph these parabolas tomorrow."
+[10:17],Student A,"Do we need to buy graph paper for the next class?"
+[10:18],Teacher,"Yes. Please prepare some graph paper for tomorrow so we can practice."
